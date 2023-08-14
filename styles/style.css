@@ -32,21 +32,78 @@ input {
 
 /* -------------- Custom CSS -------------- */
 body {
+  min-height: 100vh;
   background-color: rgb(39, 39, 39);
+  display: grid;
+  grid-template-rows: 1fr;
 }
 
 .wrapper {
+  height: 100%;
   background-color: rgb(39, 39, 39);
-  height: calc(100vh - 55px);
 }
 
 /* -------------- Dashboard -------------- */
 .dashboard {
-  background-color: rgb(24, 24, 24);
+  background-color: blanchedalmond;
   border-radius: 25px;
   margin: 20px;
-  height: 100%;
-  width: calc(100% - 40px);
+  height: calc(100% - 25px);
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.dashboard nav {
+  background-color: indianred;
+  border-radius: 25px 0px 0px 25px;
+  grid-row: 1/3;
+  display: grid;
+  align-content: start;
+  justify-items: center;
+  gap: 25px;
+}
+.dashboard nav .title {
+  margin-top: 50px;
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  gap: 10px;
+}
+.dashboard nav .title img {
+  height: 35px;
+  width: 35px;
+}
+.dashboard nav .title h1 {
+  color: white;
+  font-size: 1rem;
+}
+.dashboard nav a {
+  color: white;
+  text-decoration: none;
+}
+.dashboard header {
+  background-color: rebeccapurple;
+  border-radius: 0px 25px 0px 0px;
+  grid-column: 2/4;
+}
+.dashboard .container-main {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 3fr 1fr;
+}
+.dashboard .container-main main {
+  background-color: aquamarine;
+  padding: 25px 45px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+  gap: 45px;
+}
+.dashboard .container-main main div {
+  background-color: blanchedalmond;
+}
+.dashboard .container-main aside {
+  background-color: orange;
+  border-radius: 0px 0px 25px 0px;
 }
 
 /* -------------- Github -------------- */
