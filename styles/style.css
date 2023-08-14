@@ -137,8 +137,8 @@ body {
   background-color: aquamarine;
   padding: 25px 45px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: 300px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-auto-rows: 260px;
   gap: 45px;
 }
 .dashboard .container-main main div {
@@ -147,6 +147,95 @@ body {
 .dashboard .container-main aside {
   background-color: orange;
   border-radius: 0px 0px 25px 0px;
+}
+.dashboard aside {
+  display: grid;
+  align-content: start;
+  gap: 20px;
+}
+.dashboard aside .container-tasks div {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard aside .container-tasks div h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+.dashboard aside .container-tasks div img {
+  height: 30px;
+  width: 30px;
+}
+.dashboard aside .container-tasks hr {
+  border: 1px solid gray;
+}
+.dashboard aside .container-tasks li {
+  color: white;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 10px;
+}
+.dashboard aside .container-tasks li p {
+  font-size: 1rem;
+}
+.dashboard aside .container-tasks li div {
+  background-color: yellow;
+  border-radius: 4px;
+  height: 12px;
+  width: 12px;
+}
+.dashboard aside .container-team div {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard aside .container-team div h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+.dashboard aside .container-team div img {
+  height: 30px;
+  width: 30px;
+}
+.dashboard aside .container-team hr {
+  border: 1px solid gray;
+}
+.dashboard aside .container-team li {
+  color: white;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 5fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+.dashboard aside .container-team li div {
+  display: grid;
+  grid-auto-flow: row;
+}
+.dashboard aside .container-team li div p:last-child {
+  font-size: 0.9rem;
+}
+.dashboard aside .container-announcements {
+  display: grid;
+}
+.dashboard aside .container-announcements h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+.dashboard aside .container-announcements hr {
+  border: 1px solid gray;
+  width: 100%;
+}
+.dashboard aside .container-announcements li {
+  color: white;
+  display: grid;
+}
+.dashboard aside .container-announcements li a {
+  color: white;
 }
 
 /* -------------- Github -------------- */
