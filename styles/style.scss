@@ -194,18 +194,76 @@ body {
                     }
                 }
             }
-            .projects {
+            .report {
+                display: grid;
+                align-content: space-between;
                 &__header {
                     display: grid;
                     grid-auto-flow: column;
+                    justify-items: start;
+                    h3:last-child {
+                        justify-self: end;
+                    }
                 }
-                button {
+                &__footer {
+                    display: grid;
+                    justify-content: center;
+                    button {
+                        display: grid;
+                        grid-auto-flow: column;
+                        align-items: center;
+                        gap: 10px;
+                        img {
+                            height: 30px;
+                            width: 30px; 
+                        }
+                    }
+                }
+            }
+            .calendar {
+                display: grid;
+                align-content: space-between;
+                &__header {
                     display: grid;
                     grid-auto-flow: column;
-                    align-items: center;
+                    h3 {
+                        font-size: 1.5rem;
+                    }
                     img {
+                        justify-self: end;
                         height: 30px;
                         width: 30px; 
+                    }
+                }
+                &__main {
+                    display: grid;
+                    grid-auto-flow: column;
+                    button {
+                        font-size: 0.9rem;
+                        display: grid;
+                        span {
+                            font-weight: bold;
+                        }
+                    }
+                    .highlight {
+                        background-color: $theme-yellow;
+                    }
+                }
+                &__footer {
+                    font-size: 0.9rem;
+                    display: grid;
+                    grid-auto-flow: column;
+                    grid-template-columns: 1fr 0fr 1fr;
+                    div:first-child {
+                        p:last-child {
+                            font-weight: bold;
+                        }
+                    }    
+                    hr {
+                        height: 25px;
+                    }
+                    div:last-child {
+                        text-align: center;
                     }
                 }
             }

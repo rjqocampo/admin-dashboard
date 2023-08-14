@@ -177,18 +177,76 @@ body {
   height: 12px;
   width: 12px;
 }
-.dashboard .container-main main .projects__header {
+.dashboard .container-main main .report {
+  display: grid;
+  align-content: space-between;
+}
+.dashboard .container-main main .report__header {
   display: grid;
   grid-auto-flow: column;
+  justify-items: start;
 }
-.dashboard .container-main main .projects button {
+.dashboard .container-main main .report__header h3:last-child {
+  justify-self: end;
+}
+.dashboard .container-main main .report__footer {
+  display: grid;
+  justify-content: center;
+}
+.dashboard .container-main main .report__footer button {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
+  gap: 10px;
 }
-.dashboard .container-main main .projects button img {
+.dashboard .container-main main .report__footer button img {
   height: 30px;
   width: 30px;
+}
+.dashboard .container-main main .calendar {
+  display: grid;
+  align-content: space-between;
+}
+.dashboard .container-main main .calendar__header {
+  display: grid;
+  grid-auto-flow: column;
+}
+.dashboard .container-main main .calendar__header h3 {
+  font-size: 1.5rem;
+}
+.dashboard .container-main main .calendar__header img {
+  justify-self: end;
+  height: 30px;
+  width: 30px;
+}
+.dashboard .container-main main .calendar__main {
+  display: grid;
+  grid-auto-flow: column;
+}
+.dashboard .container-main main .calendar__main button {
+  font-size: 0.9rem;
+  display: grid;
+}
+.dashboard .container-main main .calendar__main button span {
+  font-weight: bold;
+}
+.dashboard .container-main main .calendar__main .highlight {
+  background-color: #FFEC87;
+}
+.dashboard .container-main main .calendar__footer {
+  font-size: 0.9rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 0fr 1fr;
+}
+.dashboard .container-main main .calendar__footer div:first-child p:last-child {
+  font-weight: bold;
+}
+.dashboard .container-main main .calendar__footer hr {
+  height: 25px;
+}
+.dashboard .container-main main .calendar__footer div:last-child {
+  text-align: center;
 }
 .dashboard .container-main aside {
   background-color: orange;
