@@ -98,6 +98,35 @@ body {
   background-color: rebeccapurple;
   border-radius: 0px 25px 0px 0px;
   grid-column: 2/4;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+.dashboard header .container-greetings p {
+  color: white;
+  font-size: 1.5rem;
+}
+.dashboard header .container-greetings h2 {
+  color: white;
+  font-size: 2rem;
+}
+.dashboard header .container-search {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 10px;
+}
+.dashboard header .container-search img {
+  height: 35px;
+  width: 35px;
+}
+.dashboard header .container-search input {
+  min-width: 250px;
+}
+.dashboard header img {
+  height: 35px;
+  width: 35px;
 }
 .dashboard .container-main {
   display: grid;
