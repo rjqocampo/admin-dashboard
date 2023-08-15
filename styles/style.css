@@ -32,6 +32,7 @@ input {
 
 /* -------------- Custom CSS -------------- */
 body {
+  font-family: "Lato", sans-serif;
   min-height: 100vh;
   background-color: rgb(39, 39, 39);
   display: grid;
@@ -68,30 +69,52 @@ body {
   gap: 10px;
 }
 .dashboard nav .title img {
-  height: 35px;
-  width: 35px;
+  height: 30px;
+  width: 30px;
 }
 .dashboard nav .title h1 {
   color: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 .dashboard nav .container-profile {
   display: grid;
   justify-items: center;
+  margin: 25px 0px;
 }
 .dashboard nav .container-profile img {
-  height: 35px;
-  width: 35px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
 }
 .dashboard nav .container-profile p {
   color: white;
+  font-weight: bold;
+  padding: 5px;
+}
+.dashboard nav .container-profile button {
+  font-size: 0.8rem;
+  padding: 1px 10px;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid gray;
+  background-color: #131313;
+  cursor: pointer;
 }
 .dashboard nav a {
   color: white;
   text-decoration: none;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 10px;
+}
+.dashboard nav a img {
+  height: 18px;
+  width: 18px;
 }
 .dashboard nav a:nth-child(9) {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .dashboard header {
   border-radius: 0px 25px 0px 0px;
@@ -264,7 +287,10 @@ body {
   align-self: end;
 }
 .dashboard .container-main main .ai {
-  margin: 60% auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
 }
 .dashboard .container-main main .projects {
   display: grid;

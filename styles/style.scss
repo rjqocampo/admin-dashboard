@@ -37,7 +37,16 @@ input {
 
 /* -------------- Custom CSS -------------- */
 
+// font-family: 'Inter', sans-serif;
+// font-family: 'Lato', sans-serif;
+// font-family: 'Noto Sans', sans-serif;
+// font-family: 'Noto Sans JP', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
 body {
+    font-family: 'Lato', sans-serif;
+    
     min-height: 100vh;
     background-color: rgb(39, 39, 39);
 
@@ -78,31 +87,54 @@ body {
             grid-auto-flow: column;
             gap: 10px;
             img {
-                height: 35px;
-                width: 35px;
+                height: 30px;
+                width: 30px;
             }
             h1 {
                 color: $font-white;
-                font-size: 1rem;
+                font-size: 1.1rem;
+                font-weight: bold;
             }
         }
         .container-profile {
             display: grid;
             justify-items: center;
+            margin: 25px 0px;
             img {
-                height: 35px;
-                width: 35px;
+                height: 60px;
+                width: 60px;
+                border-radius: 50px;
             }
             p {
                 color: $font-white;
+                font-weight: bold;
+                padding: 5px;
+            }
+            button {
+                font-size: 0.8rem;
+                padding: 1px 10px;
+                color: $font-white;
+                border-radius: 50px;
+                border: 1px solid gray;
+                background-color:$theme-black;
+                cursor: pointer;
             }
         }
         a {
             color: $font-white;
             text-decoration: none;
+            display: grid;
+            grid-auto-flow: column;
+            align-items: center;
+            gap: 10px;
+            img {
+                height: 18px;
+                width: 18px;
+            }
         }
-        a:nth-child(9){
-            margin-top: 100px;
+
+        a:nth-child(9) {
+            margin-top: 50px;
         }
     }
 
@@ -285,7 +317,10 @@ body {
                 }
             }
             .ai {
-                margin: 60% auto;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                padding-top: 90px;
             }
             .projects {
                 display: grid;
