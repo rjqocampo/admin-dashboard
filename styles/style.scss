@@ -1,5 +1,6 @@
 $font-white: white;
 $theme-yellow: #FFEC87;
+$theme-black: #131313;
 
 /* -------------- CSS Reset -------------- */
 
@@ -54,7 +55,7 @@ body {
 /* -------------- Dashboard -------------- */
 
 .dashboard {
-    background-color: blanchedalmond;
+    background-color: $theme-black;
     border-radius: 25px;
     margin: 20px;
     height: calc(100% - 25px);
@@ -63,7 +64,6 @@ body {
     grid-template-columns: 1fr 5fr;
 
     nav {
-        background-color:indianred;
         border-radius: 25px 0px 0px 25px;
 
         grid-row: 1 / 3;
@@ -107,7 +107,6 @@ body {
     }
 
     header {
-        background-color: rebeccapurple;
         border-radius: 0px 25px 0px 0px;
         grid-column: 2 / 4;
         
@@ -149,13 +148,16 @@ body {
         grid-auto-flow: column;
         grid-template-columns: 3fr 1fr;
         main {
-            background-color: aquamarine;
             padding: 25px 45px;
         
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             grid-auto-rows: 260px;
             gap: 45px;
+
+            .content {
+                background-color: blanchedalmond;
+            }
             .trends {
                 background-color: $theme-yellow;
                 display: grid;
@@ -267,10 +269,59 @@ body {
                     }
                 }
             }
+            .roi {
+                display: grid;
+                &__header {
+                    display: grid;
+                    grid-auto-flow: column;
+                    grid-template-columns: 0fr 0fr 1fr;
+                    p:last-child {
+                        justify-self: end;
+                    }
+                }
+                &__footer {
+                    text-align: right;
+                    align-self: end;
+                }
+            }
+            .ai {
+                margin: 60% auto;
+            }
+            .projects {
+                display: grid;
+                &__header {
+                    display: grid;
+                    grid-auto-flow: column;
+                    p {
+                        justify-self: end;
+                    }
+                }
+                img {
+                    justify-self: center;
+                    height: 30px;
+                    width: 30px; 
+                }
+                &__footer {
+                    display: grid;
+                    grid-auto-flow: column;
+                    align-items: center;
+                    grid-template-columns: 0fr 1fr 0fr;
+                    gap: 20px;
+                    hr {
+                        border: 1px solid gray;
+                        width: 100%;
+                    }
+                    p:first-child {
+                        white-space: nowrap;
+                    }
+                    p:last-child {
+                        font-size: 2rem;
+                    }
+                }
+            }
             
         }
         aside {
-            background-color:orange;
             border-radius: 0px 0px 25px 0px;
             display: grid;
             align-content: start;
