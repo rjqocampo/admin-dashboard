@@ -198,7 +198,7 @@ body {
   background-color: blanchedalmond;
   padding: 30px;
   border-radius: 30px;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .dashboard .container-main main .content:hover {
   transform: scale(1.02);
@@ -524,6 +524,7 @@ body {
   padding: 5px 15px;
   display: grid;
   gap: 20px;
+  cursor: pointer;
 }
 .dashboard .container-main aside .container-team ul li {
   color: white;
@@ -532,6 +533,10 @@ body {
   grid-template-columns: 0fr 0fr 1fr;
   align-items: center;
   gap: 10px;
+}
+.dashboard .container-main aside .container-team ul li:hover img:last-child {
+  transform: scale(1.1);
+  transform: rotate(45deg);
 }
 .dashboard .container-main aside .container-team ul li img:first-child {
   height: 40px;
@@ -552,10 +557,6 @@ body {
   width: 20px;
   justify-self: end;
   transition: all 0.1s ease-in-out;
-}
-.dashboard .container-main aside .container-team ul li img:last-child:hover {
-  transform: scale(1.1);
-  transform: rotate(45deg);
 }
 .dashboard .container-main aside .container-announcements h3 {
   color: white;
@@ -578,7 +579,7 @@ body {
   gap: 2px;
 }
 .dashboard .container-main aside .container-announcements ul li:hover a {
-  padding-left: 4px;
+  padding-left: 5px;
 }
 .dashboard .container-main aside .container-announcements ul li p {
   font-weight: bold;
@@ -587,7 +588,7 @@ body {
   font-size: 0.8rem;
   color: white;
   font-style: italic;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 /* -------------- Github -------------- */
