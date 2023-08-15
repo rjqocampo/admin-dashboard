@@ -341,45 +341,56 @@ body {
 }
 .dashboard .container-main aside {
   border-radius: 0px 0px 25px 0px;
+  padding-right: 50px;
   display: grid;
   align-content: start;
   gap: 20px;
 }
-.dashboard .container-main aside .container-tasks div {
+.dashboard .container-main aside .container-tasks > div {
+  padding: 0px 10px;
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
   align-items: center;
 }
-.dashboard .container-main aside .container-tasks div h3 {
+.dashboard .container-main aside .container-tasks > div h3 {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
-.dashboard .container-main aside .container-tasks div img {
-  height: 30px;
-  width: 30px;
+.dashboard .container-main aside .container-tasks > div img {
+  height: 20px;
+  width: 20px;
 }
 .dashboard .container-main aside .container-tasks hr {
-  border: 1px solid gray;
+  border: 1px solid rgb(36, 36, 36);
 }
-.dashboard .container-main aside .container-tasks li {
+.dashboard .container-main aside .container-tasks ul {
+  padding: 3px 5px;
+  display: grid;
+  gap: 20px;
+}
+.dashboard .container-main aside .container-tasks ul li {
   color: white;
+  font-size: 0.8rem;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 1fr;
+  justify-content: end;
   align-items: center;
   gap: 10px;
 }
-.dashboard .container-main aside .container-tasks li p {
-  font-size: 1rem;
-}
-.dashboard .container-main aside .container-tasks li div {
-  background-color: yellow;
+.dashboard .container-main aside .container-tasks ul li div {
+  background-color: rgb(143, 255, 143);
   border-radius: 4px;
-  height: 12px;
-  width: 12px;
+  height: 11px;
+  width: 11px;
+}
+.dashboard .container-main aside .container-tasks ul li .in-progress {
+  background-color: #FFEC87;
 }
 .dashboard .container-main aside .container-team div {
+  padding: 0px 10px;
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
@@ -387,46 +398,72 @@ body {
 }
 .dashboard .container-main aside .container-team div h3 {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 .dashboard .container-main aside .container-team div img {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 .dashboard .container-main aside .container-team hr {
-  border: 1px solid gray;
+  border: 1px solid rgb(36, 36, 36);
 }
-.dashboard .container-main aside .container-team li {
+.dashboard .container-main aside .container-team ul {
+  padding: 5px 15px;
+  display: grid;
+  gap: 20px;
+}
+.dashboard .container-main aside .container-team ul li {
   color: white;
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: 0fr 0fr 1fr;
   align-items: center;
   gap: 10px;
 }
-.dashboard .container-main aside .container-team li div {
+.dashboard .container-main aside .container-team ul li img:first-child {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+}
+.dashboard .container-main aside .container-team ul li div {
+  white-space: nowrap;
   display: grid;
   grid-auto-flow: row;
 }
-.dashboard .container-main aside .container-team li div p:last-child {
-  font-size: 0.9rem;
+.dashboard .container-main aside .container-team ul li div p:last-child {
+  font-size: 0.8rem;
+  font-weight: bold;
 }
-.dashboard .container-main aside .container-announcements {
-  display: grid;
+.dashboard .container-main aside .container-team ul li img:last-child {
+  height: 20px;
+  width: 20px;
+  justify-self: end;
 }
 .dashboard .container-main aside .container-announcements h3 {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 0px 10px;
 }
 .dashboard .container-main aside .container-announcements hr {
-  border: 1px solid gray;
-  width: 100%;
+  border: 1px solid rgb(36, 36, 36);
 }
-.dashboard .container-main aside .container-announcements li {
-  color: white;
+.dashboard .container-main aside .container-announcements ul {
+  padding: 5px 15px;
   display: grid;
+  gap: 15px;
 }
-.dashboard .container-main aside .container-announcements li a {
+.dashboard .container-main aside .container-announcements ul li {
+  color: white;
+  font-size: 0.9rem;
+  display: grid;
+  gap: 2px;
+}
+.dashboard .container-main aside .container-announcements ul li p {
+  font-weight: bold;
+}
+.dashboard .container-main aside .container-announcements ul li a {
   color: white;
 }
 

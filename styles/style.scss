@@ -242,8 +242,6 @@ body {
                         height: 12px;
                         width: 12px;
                     }
-                    p:last-child {
-                    }
                 }
             }
             .report {
@@ -376,101 +374,145 @@ body {
         }
         aside {
             border-radius: 0px 0px 25px 0px;
+            padding-right: 50px;
+
             display: grid;
             align-content: start;
             gap: 20px;
             .container-tasks {
-                div {
+                >div {
+                    padding: 0px 10px;
+
                     display: grid;
                     grid-auto-flow: column;
                     justify-content: space-between;
                     align-items: center;
                     h3 {
                         color: $font-white;
-                        font-size: 1.5rem;
+                        font-size: 1.3rem;
+                        font-weight: bold;
                     }
                     img {
-                        height: 30px;
-                        width: 30px;
+                        height: 20px;
+                        width: 20px;
                     }
                 }
                 hr {
-                    border: 1px solid gray;
+                    border: 1px solid $theme-gray;
                 }
-                li {
-                    color: $font-white;
+                ul {
+                    padding: 3px 5px;
                     display: grid;
-                    grid-auto-flow: column;
-                    grid-template-columns: 1fr;
-                    align-items: center;
-                    gap: 10px;
-                    p {
-                        font-size:1rem;
-                    }
-                    div {
-                        background-color: yellow;
-                        border-radius: 4px;
-                        height: 12px;
-                        width: 12px;
+                    gap: 20px;
+                    li {
+                        color: $font-white;
+                        font-size:0.8rem;
+
+                        display: grid;
+                        grid-auto-flow: column;
+                        grid-template-columns: 1fr;
+                        justify-content: end;
+                        align-items: center;
+                        gap: 10px;
+                        div {
+                            background-color: rgb(143, 255, 143);
+                            border-radius: 4px;
+                            height: 11px;
+                            width: 11px;
+                        }
+                        .in-progress {
+                            background-color: $theme-yellow;
+                        }
                     }
                 }
+
             }
             .container-team {
                 div {
+                    padding: 0px 10px;
+
                     display: grid;
                     grid-auto-flow: column;
                     justify-content: space-between;
                     align-items: center;
                     h3 {
                         color: $font-white;
-                        font-size: 1.5rem;
+                        font-size: 1.3rem;
+                        font-weight: bold;
                     }
                     img {
-                        height: 30px;
-                        width: 30px;
+                        height: 25px;
+                        width: 25px;
                     }
                 }
                 hr {
-                    border: 1px solid gray;
+                    border: 1px solid $theme-gray;
                 }
-                li {
-                    color: $font-white;
+                ul {
+                    padding: 5px 15px;
                     display: grid;
-                    grid-auto-flow: column;
-                    grid-template-columns: 1fr 5fr 1fr;
-                    align-items: center;
-                    gap: 10px;
-                    div {
+                    gap: 20px;
+                    li {
+                        color: $font-white;
+    
                         display: grid;
-                        grid-auto-flow: row;
-                        p:last-child {
-                            font-size: 0.9rem;
+                        grid-auto-flow: column;
+                        grid-template-columns: 0fr 0fr 1fr;
+                        align-items: center;
+                        gap: 10px;
+                        img:first-child {
+                            height: 40px;
+                            width: 40px;
+                            border-radius: 40px;
+                        }
+                        div {
+                            white-space: nowrap;
+                            display: grid;
+                            grid-auto-flow: row;
+                            p:last-child {
+                                font-size: 0.8rem;
+                                font-weight: bold;
+                            }
+                        }
+                        img:last-child {
+                            height: 20px;
+                            width: 20px;
+                            justify-self: end;
                         }
                     }
                 }
             }
             .container-announcements {
-                display: grid;
                 h3 {
                     color: $font-white;
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    padding: 0px 10px;
                 }
                 hr {
-                    border: 1px solid gray;
-                    width: 100%;
+                    border: 1px solid $theme-gray;
                 }
-                li {
-                    color: $font-white;
+                ul {
+                    padding: 5px 15px;
+
                     display: grid;
-                    a {
+                    gap: 15px;
+                    li {
                         color: $font-white;
+                        font-size: 0.9rem;
+                        display: grid;
+                        gap: 2px;
+                        p {
+                            font-weight: bold;
+                        }
+                        a {
+                            color: $font-white;
+                        }
                     }
                 }
             }
         }
     }
-
-    
 }
 
 /* -------------- Github -------------- */
