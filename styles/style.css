@@ -388,7 +388,7 @@ body {
   font-size: 2.5rem;
 }
 .dashboard .container-main main .ai {
-  background-image: url("img/ai3.jpg");
+  background-image: url("../img/ai3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -551,6 +551,11 @@ body {
   height: 20px;
   width: 20px;
   justify-self: end;
+  transition: all 0.1s ease-in-out;
+}
+.dashboard .container-main aside .container-team ul li img:last-child:hover {
+  transform: scale(1.1);
+  transform: rotate(45deg);
 }
 .dashboard .container-main aside .container-announcements h3 {
   color: white;
@@ -572,6 +577,9 @@ body {
   display: grid;
   gap: 2px;
 }
+.dashboard .container-main aside .container-announcements ul li:hover a {
+  padding-left: 4px;
+}
 .dashboard .container-main aside .container-announcements ul li p {
   font-weight: bold;
 }
@@ -579,6 +587,7 @@ body {
   font-size: 0.8rem;
   color: white;
   font-style: italic;
+  transition: all 0.2s ease-in-out;
 }
 
 /* -------------- Github -------------- */
