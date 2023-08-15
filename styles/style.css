@@ -314,7 +314,8 @@ body {
 .dashboard .container-main main .calendar__main {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  grid-template-columns: repeat(3, 50px);
   gap: 20px;
 }
 .dashboard .container-main main .calendar__main button {

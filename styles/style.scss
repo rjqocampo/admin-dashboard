@@ -352,7 +352,8 @@ body {
                 &__main {
                     display: grid;
                     grid-auto-flow: column;
-                    grid-template-columns: repeat(3, 1fr);
+                    justify-content: center;
+                    grid-template-columns: repeat(3, 50px);
                     gap: 20px;
                     button {
                         font-size: 0.9rem;
