@@ -55,6 +55,9 @@ body {
 }
 .dashboard nav {
   border-radius: 25px 0px 0px 25px;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: rgb(36, 36, 36);
   grid-row: 1/3;
   display: grid;
   align-content: start;
@@ -118,36 +121,48 @@ body {
 }
 .dashboard header {
   border-radius: 0px 25px 0px 0px;
+  padding: 15px 50px;
   grid-column: 2/4;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 1fr;
   align-items: center;
+  gap: 30px;
 }
 .dashboard header .container-greetings p {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 .dashboard header .container-greetings h2 {
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 .dashboard header .container-search {
+  border-radius: 50px;
+  padding: 4px 25px 4px 4px;
+  background-color: rgb(24, 24, 24);
   display: grid;
   grid-auto-flow: column;
   align-items: center;
-  gap: 10px;
 }
 .dashboard header .container-search img {
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
 }
 .dashboard header .container-search input {
+  color: white;
+  background-color: rgb(24, 24, 24);
+  border: none;
   min-width: 250px;
 }
-.dashboard header img {
-  height: 35px;
-  width: 35px;
+.dashboard header > img {
+  height: 40px;
+  width: 40px;
+  padding: 7px;
+  background-color: #FFEC87;
+  border-radius: 10px;
 }
 .dashboard .container-main {
   display: grid;
