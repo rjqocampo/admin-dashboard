@@ -18,7 +18,7 @@ Link to live project: https://rjqocampo.github.io/admin-dashboard/ :point_left:
   * Visual Studio Code for IDE
 
 ### Motivation
-To practice and solidify my HTML and CSS fundamentals, specifically grid layouts
+To practice and refine my HTML and CSS fundamentals, specifically grid layouts
 
 ### My Learnings
 * Value of CSS Grid for layouts
@@ -72,6 +72,8 @@ Thank you for your contributions and I appreciate all interests in making this p
 If you have any questions, feel free to contact me.
 
 # Acknowledgement
+
+Thank you to [Halo UI UX](https://dribbble.com/shots/20920711-Wise-Admin-Dashboard-Analytics-UX) for the design
 
 Thank you to [Google Fonts](https://fonts.google.com/) for the web fonts
 
