@@ -2,7 +2,7 @@
 
 Welcome to My Dashboard Project!
 
-This Admin Dashboard project is a design exercise aimed at improving my HTML and CSS grid layout skills. This project focuses solely on the visual aspects.
+This Admin Dashboard project is a layout exercise aimed at improving my HTML and CSS grid layout skills. This project focuses solely on the visual aspects.
 
 Link to live project: https://rjqocampo.github.io/admin-dashboard/ :point_left:
 
@@ -73,7 +73,7 @@ If you have any questions, feel free to contact me.
 
 # Acknowledgement
 
-Thank you to [Halo UI UX](https://dribbble.com/shots/20920711-Wise-Admin-Dashboard-Analytics-UX) for the design
+Thank you to [Halo UI UX](https://dribbble.com/shots/20920711-Wise-Admin-Dashboard-Analytics-UX) for the design inspiration
 
 Thank you to [Google Fonts](https://fonts.google.com/) for the web fonts
 
