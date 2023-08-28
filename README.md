@@ -64,6 +64,10 @@ _or_
 
 # Contributions
 
+I owe my learnings to the open source community. It's an amazing place to learn, inspire and create.  So I welcome any contributions from the community that can help enhance this project. 
+
+### Contribute
+
 If you're interested in contributing, here are a few pointers to get you started:
 
 1. **Fork the Repository:** Fork this repository to your GitHub account.
